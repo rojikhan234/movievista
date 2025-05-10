@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Vista</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">MVista</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trend</li>
+                    <li class="menu-list-item">Mood</li>
+                </ul>
+            </div>
+            
+            <div class="profile-container">
+                <img class="profile-picture" src="assets/images/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="profile-menu">
+                    <a href="#" class="profile-menu-item"><i class="fa-solid fa-user"></i> Profile</a>
+                    <a href="#" class="profile-menu-item"><i class="fa-solid fa-envelope"></i> Email</a>
+                    <a href="#" class="profile-menu-item"><i class="fa-solid fa-cog"></i> Setting</a>
+                    <a href="#" class="profile-menu-item"><i class="fa-solid fa-question-circle"></i> Help</a>
+                    <a href="#" class="profile-menu-item"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-ticket"></i>
+        <i class="left-menu-icon fa-solid fa-square-poll-vertical"></i>
+        <i class="left-menu-icon fa-solid fa-cart-arrow-down"></i>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video id="background-video" autoplay loop muted>
+                <source src="assets/videos/1434659607842-pgv4ql-1727367754616.mp4" type="video/mp4">
+            </video>
+            <div class="video-text-container">
+                <h1>MOANA 2</h1>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                    Moana journeys to the far seas of Oceania after 
+                    receiving an unexpected call from her wayfinding ancestors.
+                    Directors: Dana Ledoux Miller, Jason Hand, David Derrick Jr.
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Action</a>
+                    <a href="#" class="category">Adventure</a>
+                    <a href="#" class="category"><span>4k</span></a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="video-gradient"></div>
+        <div class="sound-toggle">
+            <i id="sound-icon" class="fa-solid fa-volume-mute"></i>
+        </div>
+    </div>
+
+        <div class="movie-list-container1">
+            <h1 class="movie-list-title new-release">𝓝𝓔𝓦 𝓡𝓔𝓛𝓔𝓐𝓢𝓔𝓢</h1>
+            <div class="movie-list-wrapper">
+            
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/mufasa new2.jpg" alt="">
+                        <span class="movie-list-item-title">Mufasa: The Lion King</span>
+                        <p class="movie-list-item-desc">Lost and alone, orphaned cub Mufasa meets a sympathetic lion named Taka, 
+                            the heir to a royal bloodline.
+                             The chance meeting sets in motion an expansive journey of an extraordinary group of misfits searching for their destinies.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                            <button class="movie-list-item-button" onclick="redirectToMovie('Mufasa; the Lion King')">Watch</button>
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/p_20cs_kingdomoftheplanetoftheapes_v3_2758_5dc87ec6.jpeg" alt="">
+                        <span class="movie-list-item-title">kingdom
+                            of planet of apes</span>
+                        <p class="movie-list-item-desc">Many years after the reign of Caesar,
+                             a young ape goes on a journey that will lead him 
+                            to question everything he's been
+                             taught about the past and make choices that
+                              will define a future for apes and humans alike.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Ek-Jaadugar-322x403.jpg" alt="">
+                        <span class="movie-list-item-title">Ek-Jaadugar</span>
+                        <p class="movie-list-item-desc">The film tells the powerful story of Chhatrapati Sambhaji Maharaj,
+                             the courageous son of Shivaji Maharaj,
+                              who led the Maratha Empire through one of its most challenging times</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Ground-Zero-2-322x572.jpg" alt="">
+                        <span class="movie-list-item-title">Ground-Zero</span>
+                        <p class="movie-list-item-desc">After the 2001 Parliament attack,
+                             BSF officer Dubey leads a 2-year probe uncovering the mastermind Ghazi Baba, 
+                             enabling India's biggest anti-terror operation.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Phule-306x393.jpg" alt="">
+                        <span class="movie-list-item-title">Phule</span>
+                        <p class="movie-list-item-desc">A husband and wife, it was the time of child marriage
+                             when girl child was refused education and pushed 
+                             into marriage, he chose to educate his wife and were a 
+                             social reformer they went to campaign for 
+                             increased rights for underprivileged.
+                        </p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Kapkapiii-322x408.jpg" alt="">
+                        <span class="movie-list-item-title">Kapkapiii</span>
+                        <p class="movie-list-item-desc">A group of friends looking for a bit of fun and thrill,
+                             use an ouija board to talk to a ghost.
+                              Soon they find out that their house is now haunted by a female spirit.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/The-Secret-of-DevkaaliPoster-306x393.jpeg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container2">
+            <h1 class="movie-list-title- trending"> 𝓣𝓻𝓮𝓷𝓭𝓲𝓷𝓰</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/pirates-of-the-caribbean-the-curse-of-the-black-pearl.avif" alt="">
+                        <span class="movie-list-item-title">pirates</span>
+                        <p class="movie-list-item-desc">8.Pirates of the Caribbean: The Curse of the Black Pearl (2003) Blacksmith Will
+                             Turner teams up with eccentric pirate Captain Jack Sparrow to save Turner's love,
+                             Elizabeth Swann, from cursed pirates led by Jack's 
+                             mutinous former first mate, Hector Barbossa.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Sikandar-2-306x393.jpeg" alt="">
+                        <span class="movie-list-item-title">Sikandar</span>
+                        <p class="movie-list-item-desc">9.A young, passionate individual challenges a widespread corrupt system,
+                             advocates for the rights of ordinary citizens
+                              and disrupts established power structures in a country marked by unfairness.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/The-Bhootnii-306x393.jpg" alt="">
+                        <span class="movie-list-item-title">The-Bhootnii</span>
+                        <p class="movie-list-item-desc">10.A ghost haunting St. Vincent College's Virgin Tree awakens each Valentine's Day seeking love.
+                             When student Shantanu summons her accidentally, 
+                             supernatural events force a ghostbuster to investigate the spirit's tragic past.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Zora-322x417.jpg" alt="">
+                        <span class="movie-list-item-title">Zora</span>
+                        <p class="movie-list-item-desc">11.Matja and his family in a dystopian future face an unresolved tragedy,
+                             and despite losing faith and struggling to find his true self,
+                             the arrival of a stranger disrupts their lives, 
+                             even leading to the young kid turning back to his father.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/treanding4.jpg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/trending5.jpg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/treanding6.jpg" alt="">
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                            hic fugit similique accusantium.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+    
+        <div class="feature-banner">
+            <div class="feature-image">
+              <img src="assets/images/wallhaven-391dxy.jpg" alt="Naruto">
+            </div>
+            <div class="feature-info">
+              <h2>Naruto</h2>
+              <p>Naruto Uzumaki, a young ninja who dreams of
+                 becoming Hokage, the leader of his village,
+                 Konoha, and gaining recognition after being
+                  shunned due to a demon fox sealed inside him.</p>
+              <div class="meta">
+                <span>Action</span>
+                <span>2021</span>
+                <span>EP-24</span>
+                <span>⭐ 8.5</span>
+              </div>
+              <h4>Characters</h4>
+              <p>Makima | Denji | Power | Himeno | Aki Hayakawa</p>
+              <button class="watch-btn">▶ Watch Trailer</button>
+            </div>
+          </div>
+        <div class="movie-list-container3">
+            <h1 class="movie-list-title-Anime">𝓐𝓷𝓲𝓶𝓮</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/attack on titan.webp" alt="">
+                        <span class="movie-list-item-title">Attack On Titan: The Last Attack</span>
+                        <p class="movie-list-item-desc">Eren uses Titan's power to defend Eldia. 
+                            He leads the Colossal Titans toward Marley, threatening global destruction. 
+                            His actions put the world's fate at risk.
+                        </p>
+                        <button class="movie-list-item-button">Watch</button>
+                      <button class="movie-list-item-button" onclick="redirectToMovie('Attack-On-Titan')">Watch</button>
+
+                        
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-03.jpg" alt="">
+                        <span class="movie-list-item-title">Fullmetal Alchemist</span>
+                        <p class="movie-list-item-desc"> follows the Elric brothers, 
+                            Edward and Alphonse, who, after a failed attempt to resurrect their mother using alchemy,
+                             seek the Philosopher's Stone to restore their bodies,
+                             with Edward losing an arm and a leg,
+                              and Alphonse losing his entire body, his soul bound to a suit of armor.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-04.jpg" alt="">
+                        <span class="movie-list-item-title">Death Note</span>
+                        <p class="movie-list-item-desc"> the story revolves around Light Yagami, a brilliant student 
+                            who discovers a supernatural notebook, the Death Note, that can kill anyone whose name is written within it,
+                             leading him on a crusade to cleanse the world of criminals and establish a new world order.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-05.jpg" alt="">
+                        <span class="movie-list-item-title">Fire Force</span>
+                        <p class="movie-list-item-desc"> follows Shinra Kusakabe, a pyrokinetic, 
+                            as he joins Special Fire Force Company 8, tasked with fighting Infernals, 
+                            creatures resulting from spontaneous human combustion, 
+                            and uncovering the mystery behind the phenomenon.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-09.jpg" alt="">
+                        <span class="movie-list-item-title">One Piece</span>
+                        <p class="movie-list-item-desc">follows Monkey D. Luffy's journey to
+                             become the Pirate King by finding the legendary treasure, 
+                            "One Piece," after being inspired by the previous Pirate King, Gol D. Roger.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-07.jpg" alt="">
+                        <span class="movie-list-item-title">Death Note</span>
+                        <p class="movie-list-item-desc"> the story revolves around Light Yagami,
+                             a brilliant student who discovers a supernatural notebook, 
+                             the Death Note, that can kill anyone whose name is written within it,
+                             leading him on a crusade to cleanse the world of criminals and establish a new world order.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/anime-08.jpg" alt="">
+                        <span class="movie-list-item-title">Attack on Titan</span>
+                        <p class="movie-list-item-desc"> follows humanity's desperate struggle for survival 
+                            against giant,
+                             man-eating humanoid creatures called Titans, with Eren Jaeger,
+                             Mikasa Ackerman, and Armin Arlert joining the Survey Corps to fight them and uncover their origins.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container4">
+            <h1 class="movie-list-title-Horror">ℌ𝔬𝔯𝔯𝔬𝔯</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/Companion_film_poster.jpg" alt="">
+                        <span class="movie-list-item-title">companion</span>
+                        <p class="movie-list-item-desc">A weekend getaway at a remote 
+                            cabin turns to chaos when it's revealed that one of the guests --
+                             a subservient android built for human companionship -- has gone haywire.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror1.jpg" alt="">
+                        <span class="movie-list-item-title">Munjya</span>
+                        <p class="movie-list-item-desc">A young man's visit to his native village unveils a 
+                            family secret and a vengeful spirit,
+                             the Munjya, who wants to get married.
+                              Now the young man must fight to protect himself and his love from Munjya's clutches.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror2.jpg" alt="">
+                        <span class="movie-list-item-title">Stree-2</span>
+                        <p class="movie-list-item-desc">The town of Chanderi is being haunted again.
+                             This time, women are mysteriously abducted by
+                             a terrifying headless entity. Once again, it is up to
+                              Vicky and his friends to save their town and loved ones.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror3.jpg" alt="">
+                        <span class="movie-list-item-title">Shaitaan</span>
+                        <p class="movie-list-item-desc">A family outing takes a terrifying turn when
+                             an intruder takes over the body
+                             of the teenage daughter, putting her at the mercy of increasingly sinister orders.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror7.jpg" alt="">
+                        <span class="movie-list-item-title">Stopmotion</span>
+                        <p class="movie-list-item-desc">A talented stop-motion animator becomes consumed by the grotesque world
+                             of her horrifying creations -- with deadly results.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror6.jpg" alt="">
+                        <span class="movie-list-item-title">TAU</span>
+                        <p class="movie-list-item-desc">A woman trapped inside a sadistic genius' 
+                            smart house must somehow get past the advanced artificial intelligence guarding her.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="assets/images/horror8.cHJkLWVtcy1hc3NldHMvbW92aWVzLzJjMWViMGM1LWZiYTgtNDM2Ny05NDEwLTY5ZTg4ODYyZTRmYi5qcGc=" alt="">
+                        <span class="movie-list-item-title">The Damned</span>
+                        <p class="movie-list-item-desc">Fighting for survival at an isolated 
+                            fishing outpost, Eva and her crew are cursed after making the choice to not help a sinking ship off the coast.
+                             Facing the consequences, a darkness consumes them all, creating chaos and death at every turn.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="home.js"></script>
+
+    
+    <script>
+        // Toggle Functionality
+        const toggle = document.querySelector('.toggle');
+        const ball = document.querySelector('.toggle-ball');
+        
+        toggle.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            ball.classList.toggle('move');
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode'); // Add light mode class
+
+            // Toggle dark mode for navbar and sidebar
+            document.querySelector('.navbar').classList.toggle('dark-mode');
+            document.querySelector('.sidebar').classList.toggle('dark-mode');
+        });
+
+        // Sound Toggle Functionality
+        const video = document.getElementById('background-video');
+        const soundIcon = document.getElementById('sound-icon');
+        
+        soundIcon.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                soundIcon.classList.remove('fa-volume-mute');
+                soundIcon.classList.add('fa-volume-up');
+            } else {
+                video.muted = true;
+                soundIcon.classList.remove('fa-volume-up');
+                soundIcon.classList.add('fa-volume-mute');
+            }
+        });
+
+        // Ensure video plays
+        video.play().catch(error => {
+            console.error('Error playing video:', error);
+        });
+
+        // Profile Menu Toggle
+        const profileContainer = document.querySelector('.profile-container');
+        const profileMenu = document.querySelector('.profile-menu');
+        const profileTextContainer = document.querySelector('.profile-text-container');
+        
+        profileTextContainer.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            profileMenu.classList.toggle('show');
+        });
+
+        // Close profile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!profileContainer.contains(event.target)) {
+                profileMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
